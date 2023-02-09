@@ -11,7 +11,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>O Mentalista</title>
-</head>
+  </head>
   <body>
     <section>
       <h1>Mentalista</h1>
@@ -19,13 +19,23 @@
         Chute um Número entre <br /><br />
         1 e 10:
       </h2>
-      <input id="chute" type="number" />
-      <button  onclick="verificar()">
+      <input
+        id="chute"
+        type="number"
+        step="1"
+        min="1"
+        max="10"
+        placeholder="Digite um número"
+      />
+      <button id="btn-chutar" onClick="verificar()">
         Chutar
+      </button>
+      <button id="btn-chutar" onClick="window.location.reload()">
+        Reiniciar
       </button>
       <h3 id="h3"></h3>
     </section>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
